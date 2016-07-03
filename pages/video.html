@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- http://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_av_met_play_pause -->
+
+<button onclick="playVid()" type="button">Play Video</button>
+<button onclick="pauseVid()" type="button">Pause Video</button><br>
+
+<video id="myVideo" width="320" height="176" autoplay>
+    <source src="../video/rapidTestMock.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+<script>
+    var vid = document.getElementById("myVideo");
+
+    function playVid() {
+        vid.play();
+    }
+
+    function pauseVid() {
+        vid.pause();
+    }
+</script>
+
+<!-- http://www.w3schools.com/html/html5_video.asp -->
+<!-- AUTOPLAY -->
+
+<video id="this" width="320" height="240" autoplay>
+    <source src="../video/rapidTestMock.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
